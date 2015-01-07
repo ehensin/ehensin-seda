@@ -139,9 +139,9 @@ public class Stage implements IStage, IStageEventHandleStatusListener{
 				if( !threadPool.isShutDown() )
 				    threadPool.execute(new StageEventHandlerWrapper(handler, event, this));
 			} catch (InterruptedException e) {
-				Logger.getGlobal().log(Level.SEVERE, e.getMessage(), e);
+				Logger.getAnonymousLogger().log(Level.SEVERE, e.getMessage(), e);
 			} catch (RejectedExecutionException e){
-				Logger.getGlobal().log(Level.SEVERE, e.getMessage(), e);
+				Logger.getAnonymousLogger().log(Level.SEVERE, e.getMessage(), e);
 			}
 			
 		}

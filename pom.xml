@@ -81,4 +81,8 @@
 	</build>
 	<artifactId>ehensin-seda</artifactId>
 	<name>ehensin-seda</name>
+	<parent>
+		<groupId>com.ehensin</groupId>
+		<version>1.0.0</version>
+	</parent>
 </project>
